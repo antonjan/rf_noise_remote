@@ -15,7 +15,7 @@ soapy_power -g 10 -d driver=miri  -f 1M:30M -B 2000 -F rtl_power --tune-delay 1 
 
 ## 
 This is the code for the new V3 rf noise system
-# sameling is done
+# sampeling is done
 WARNING: Sample rate 2000000.0 Hz is not supported, setting it to 8000000.0 Hz!<br>
 INFO: Using device: miri<br>
 INFO: repeats: 1600<br>
