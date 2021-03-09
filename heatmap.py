@@ -240,8 +240,7 @@ def summarize_pass(args):
         line = [s.strip() for s in line.strip().split(',')]
         #line = [line[0], line[1]] + [float(s) for s in line[2:] if s]
         line = [s for s in line if s]
-	
-	
+
         low  = int(float(line[2])) + int(float(args.offset_freq))
         high = int(float(line[3])) + int(float(args.offset_freq))
         step = float(line[4])
@@ -322,12 +321,10 @@ def summarize_pass(args):
 
 def default_palette():
     return [(i, i, 50) for i in range(256)]
-#     return [(i, i, 9500) for i in range(256)]
 
 def extended_palette():
     p = [(0,0,50)]
     for i in range(1, 256):
-#    for i in range(1, 4096):
         p.append((i, i-1, 50))
         p.append((i-1, i, 50))
         p.append((i, i, 50))
@@ -360,7 +357,6 @@ def rgb_fn(palette, min_z, max_z):
     def rgb_inner(z):
         tone = (z - min_z) / (max_z - min_z)
         tone_scaled = int(tone * (len(palette)-1))
-	print (tone_scaled)
         return palette[tone_scaled]
     return rgb_inner
 
