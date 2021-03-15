@@ -7,7 +7,9 @@ This heatmap.py can handel 12bit 4096 values from sdrplay and miri decice using 
  sudo -H pip3 install simplesoapy<br>
  sudo -H pip3 install simplespectral<br>
  sudo -H pip3 install soapy_power<br>
- sudo apt-get install libatlas-base-dev  #fix numpy problem
+ sudo apt-get install libatlas-base-dev  #fix numpy problem<br>
+ sudo apt-get install apacahe2<br>
+ sudo apt-get install php<br>
 
 my heatmap.py that works with 12 bit not just 8bit SDR<br>
 ## dont install python 2
